@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="productCard">
+        <h1>Product Card</h1>
+        <img
+          id="productImage"
+          src="img1.jpg"
+          alt="Product Image"
+          onmouseover="imageOver()"
+          onmouseout="imageOut()"
+        />
+
+        <h2 id="productName">Head Phone</h2>
+
+        <p id="productDescription">
+          A stylish and modern head phone for everyday use.
+        </p>
+
+        <h3 id="productPrice">Price: Rs. 5,000</h3>
+
+        <button onclick="buyNow()">Buy Now</button>
+
+        <button onclick="changeProduct()">Change Product</button>
+
+        <button onclick="changeProductInfo()">Change Product Info</button>
+
+        <hr />
+        <input type="text" id="userName" placeholder="Enter your name" />
+
+        <button onclick="showName()">Enter Name</button>
+
+        <p id="welcomeMessage"></p>
+
+        <p id="buyMessage"></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
